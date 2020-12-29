@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+       int index;
+        std::sort(nums.begin(), nums.end());
+           for (int j =0 ; j<nums.size() ; j++){
+               if (nums[j] == val)
+                   index = j ; 
+               break;
+           }
+        return index+2;
+    } 
+};
