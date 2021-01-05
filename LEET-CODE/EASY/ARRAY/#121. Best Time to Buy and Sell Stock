@@ -20,5 +20,7 @@ public:
     }
 };
 
+INT_MAX is a macro that specifies that an integer variable cannot store any value beyond this limit. INT_MIN specifies that an integer variable cannot store any value below this limit. Values of INT_MAX and INT_MIN may vary from compiler to compiler
+
 Runtime: 12 ms, faster than 56.35% of C++ online submissions for Best Time to Buy and Sell Stock.
 Memory Usage: 13.4 MB, less than 39.28% of C++ online submissions for Best Time to Buy and Sell Stock.
