@@ -1,4 +1,5 @@
-## SOLUTION : 
+## SOLUTION :
+Video : https://www.youtube.com/watch?v=edEKbe5B_68
 ```
 #include <algorithm>
 #include <functional>
