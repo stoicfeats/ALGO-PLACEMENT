@@ -1,4 +1,5 @@
 # SELECTION SORT 
+## Video : https://youtu.be/fHWQDy3_ZFk
 ```
 Selection Sort (A) : 
 1. n<-length[A]
