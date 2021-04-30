@@ -1,6 +1,5 @@
 Question : https://www.codechef.com/START3C/problems/CCISLAND
-
-
+Video
 ```
 #include <bits/stdc++.h>
 using namespace std;
