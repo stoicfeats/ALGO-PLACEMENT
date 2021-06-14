@@ -1,4 +1,6 @@
-## Question Link : https://www.codechef.com/JUNE21C/problems/CHFHEIST/
+## Question Link : https://www.codechef.com/JUNE21C/problems/CHFHEIST/ <br>
+
+## Video Solution : https://www.youtube.com/watch?v=oO-j4vyVKpI <br>
 
 
 Solution : (Accepted)
