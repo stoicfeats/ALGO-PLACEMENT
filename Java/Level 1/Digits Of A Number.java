@@ -20,3 +20,35 @@ import java.util.*;
     }
      }
     }
+
+
+// Code 2 : ( Accepted )
+
+import java.util.*;
+    
+    public class Main{
+    
+    public static void main(String[] args) {
+       Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int num = n;
+        int count=0;
+        int size=0;
+        while(n>0){
+            n = n/10;
+            count++;
+        }
+        
+        int div = (int)Math.pow(10,count-1);
+        
+        while(div!=0){
+            int q = num/div;
+            int r = num%div;
+            
+            System.out.println(q);
+            num = r;
+            
+            div = div/10;
+        }
+     }
+    }
