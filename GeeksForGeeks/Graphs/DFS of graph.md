@@ -21,8 +21,9 @@ class Solution
         }
     }
 
-	//Function to return a list containing the DFS traversal of the graph.
-	vector<int>dfsOfGraph(int V, vector<int> adj[])
+	// Function to return a list containing the DFS traversal of the graph.
+	
+    vector<int>dfsOfGraph(int V, vector<int> adj[])
 	{
 	    vector<int> dfs;
         vector<int> vis(V,false);
@@ -33,6 +34,7 @@ class Solution
     }
 
 };
+
 ```
 
 Solution 2 : ( Accepted - Used other solution)
@@ -54,6 +56,7 @@ for(int neigh : adj[v])
 if(!vis[neigh])
 dfs(neigh, adj, V, vis, res);
 }
+
 ```
 
 
