@@ -1,4 +1,17 @@
- public static int anyBaseToAnyBase(int n, int sb, int db) {
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int sourceBase = scn.nextInt();
+        int destBase = scn.nextInt();
+        int ans = anyBaseToAnyBase(n, sourceBase, destBase);
+        System.out.println(ans);
+    }
+
+    public static int anyBaseToAnyBase(int n, int sb, int db) {
         int result;
         int inDecimal = anyBaseToDecimal(n, sb);
         int inDestBase = decimalToAnyBase(inDecimal, db);
@@ -30,3 +43,4 @@
         }
         return ans;
     }
+}
