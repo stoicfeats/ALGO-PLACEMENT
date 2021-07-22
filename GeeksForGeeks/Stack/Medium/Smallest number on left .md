@@ -1,3 +1,5 @@
+## Question L:inl ; https://practice.geeksforgeeks.org/problems/smallest-number-on-left3403/1#
+
 // { Driver Code Starts
 // Initial Template for C++
 
