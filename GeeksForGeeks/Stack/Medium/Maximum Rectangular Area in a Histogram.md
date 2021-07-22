@@ -1,9 +1,10 @@
-#include <bits/stdc++.h>
-#include <stack>
-#include <vector>
-#include <utility>
-using namespace std;
+## Question Link : https://practice.geeksforgeeks.org/problems/maximum-rectangular-area-in-a-histogram-1587115620/1#
 
+## Solution Video : *to be inserted* 
+
+SOLUTION : (ACCEPTED)
+
+```
 class Solution
 {
     public:
@@ -62,3 +63,4 @@ class Solution
         return m;  
     }
 };
+```
