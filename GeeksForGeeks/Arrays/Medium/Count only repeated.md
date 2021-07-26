@@ -1,11 +1,11 @@
-
-
 ### Question Link : https://practice.geeksforgeeks.org/problems/count-only-repeated2047/1#
 <br>
+
 ### CODE WALKTHROUGH : *to be inserted soon*
 
 
 SOLUTION : ( ACCPTED )
+
 // binary search solution ( faster 0.3/1.4) need to understand it once
 ```
 class Solution
@@ -32,7 +32,10 @@ class Solution
     }
 };
 ```
+<br>
+
 SOLUTION 2 : ( ACCEPTED )
+
 ```
 // hasmaps soltuion done by me ( slower 1/1.4)
 class Solution

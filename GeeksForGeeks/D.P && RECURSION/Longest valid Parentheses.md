@@ -1,3 +1,10 @@
+### Question Link :https://practice.geeksforgeeks.org/problems/longest-valid-parentheses5657/1#
+
+### Solution Video : https://www.youtube.com/watch?v=ic8JTuVckg0 
+
+
+SOLUTION : ( ACCEPTED )
+
 ```
 class Solution{
 public:
