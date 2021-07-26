@@ -2,7 +2,31 @@
 
 ### Video Solution : https://www.youtube.com/watch?v=NXOOYYwpbg4&t=1611s
 
-SOLUTION : ( ACCEPTED )
+
+SOLUTION 1 : ( SHORT AND STEADY )
+
+>0.45
+
+```
+class Solution
+{
+    public:
+    vector<long long> nextLargerElement(vector<long long> arr, int n){
+        vector<long long> v(n);
+        stack<long long> s;
+        for(int i=n-1;i>=0;i--){
+            while(!s.empty() && arr[i] >= s.top()) s.pop();
+            v[i] = s.empty() ? -1 : s.top();
+            s.push(arr[i]);
+        }
+        return v;
+    }
+};
+```
+
+SOLUTION 2 : ( ACCEPTED )
+
+> aditya verma<br>
 
 ```
 class Solution
@@ -41,5 +65,25 @@ class Solution
     reverse(v.begin(),v.end());
     return v;
 }
+};
+```
+
+SOLUTION 3 : IF ONLY INDEX IS REQUIRED IN ARRAY 
+
+> this will return a vector containing all the index instead of values.
+```
+class Solution
+{
+    public:
+    vector<long long> nextLargerElement(vector<long long> arr, int n){
+       vector<long long> v(n);
+       stack<long long> s;
+       for(int i=n-1;i>=0;i--){
+           while(!s.empty() && arr[i]>=arr[s.top()]) s.pop();   
+           v[i] = s.empty() ? -1 : s.top();
+           s.push(i);
+       }
+       return v;
+    }
 };
 ```
