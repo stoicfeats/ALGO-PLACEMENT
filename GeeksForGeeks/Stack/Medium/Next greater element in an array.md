@@ -1,3 +1,10 @@
+### Question Link : https://practice.geeksforgeeks.org/problems/next-larger-element-1587115620/1
+
+### Video Solution : https://www.youtube.com/watch?v=NXOOYYwpbg4&t=1611s
+
+SOLUTION : ( ACCEPTED )
+
+```
 class Solution
 {
     public:
@@ -35,3 +42,4 @@ class Solution
     return v;
 }
 };
+```
