@@ -1,5 +1,10 @@
-## Question L:inl ; https://practice.geeksforgeeks.org/problems/smallest-number-on-left3403/1#
+## Question Link : https://practice.geeksforgeeks.org/problems/smallest-number-on-left3403/1#
 
+### Video Solution : *to be inserted soon*
+
+SOLUTION : ( ACCEPTED )
+
+```
 // { Driver Code Starts
 // Initial Template for C++
 
@@ -58,3 +63,4 @@ int main(){
     }
     return 0;
 }  // } Driver Code Ends
+```
