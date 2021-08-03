@@ -1,6 +1,8 @@
 ## Remove all duplicates from a given string
 
-### Question Link : https://practice.geeksforgeeks.org/problems/remove-duplicates3034/1 
+### Question Link 1 : https://practice.geeksforgeeks.org/problems/remove-duplicates3034/1 
+### Question Link 2 : https://practice.geeksforgeeks.org/problems/remove-duplicates3034/1 
+
 
 
 ### Video Solution : https://youtu.be/8c4qAr7Fuq0
