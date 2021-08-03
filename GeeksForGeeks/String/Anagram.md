@@ -1,8 +1,15 @@
+### Question Link : https://practice.geeksforgeeks.org/problems/anagram-1587115620/1
+
+### Video Solution : https://youtu.be/Dp4Gl8ezPZY <br>
+
+SOLUTION : ( ACCEPTED )
+
+```
 class Solution
 {
     public:
-    //Function is to check whether two strings are anagram of each other or not.
     bool isAnagram(string a, string b){
+
         int hash[26] = {0};
         if(a.size()!=b.size()) return 0;
         
@@ -22,3 +29,5 @@ class Solution
         return 1;
         
     }
+};
+```
