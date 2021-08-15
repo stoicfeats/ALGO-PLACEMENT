@@ -1,4 +1,4 @@
-// no main is required 
+ // no main is required 
 
 // read from left to right and top to down
 console.log("Hello JS : This is my first code");
