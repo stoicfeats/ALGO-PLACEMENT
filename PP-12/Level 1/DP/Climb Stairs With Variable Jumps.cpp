@@ -2,19 +2,19 @@
 using namespace std;
 
 int cs(int arr[], int n){
-    int[] dp[n+1];
+    int dp[n+1]={0}; // fill dp with zero to avoid garbage values
     
     dp[n] = 1;
 
-    for(int i = n-1; i>0; i--){
+    for(int i = n-1; i>=0; i--){
         for(int jump =1; jump<= arr[i]; jump++ ){
-            if(i+jump<n=){
-                dp[i] += dp[i+jumps];
+            if(i+jump <= n){
+                dp[i] += dp[i+jump];
             }
         }
     }
 
-    return dp[n];
+    return dp[0];
 }
 
 int main(){
