@@ -4,25 +4,26 @@
 Sumit Sir : https://www.youtube.com/watch?v=l_nR5X9VmaI&list=PL-Jc9J83PIiG8fE6rj9F5a6uyQ5WPdqKy&index=13 <br>
 Mine (logic) : https://youtu.be/E0M3ykpH5cQ
 
-Solution : (Shows garbage values in gfg and leetcode)
+Solution : 
+
 ```
 class Solution
 {
   public:
-    long long int count( int arr[], int len, int sum)
+    long long int count( int arr[], int len, int sum )
     {
-       long long int dp[sum+1] = {0};
-       dp[0]=1;
+       
+    long long int dp[sum+1] = {0};
+    dp[0]=1;
         //memset(dp,0,sizeof(dp));
-       for(int i=0;i<len;i++){
-           for(int j=arr[i];j<sum+1;j++){
-               dp[j]+= dp[j-arr[i]];
+    for(int i=0;i<len;i++){
+        for(int j=arr[i];j<sum+1;j++){
+        dp[j]+= dp[j-arr[i]];
            }
        }
         return dp[sum];
     }
 };
-
 ```
 
 SOLUTION : ( ADITYA VERMA ) 
