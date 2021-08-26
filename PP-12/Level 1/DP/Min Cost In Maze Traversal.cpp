@@ -1,7 +1,7 @@
-<!-- Debuged Errors :
-Error 1 : passing a 2D array was not a good idea, use vector instead
-Error 2 : Don't rely on single row value because n and m values can be different
-Error 3 : while filing 2D vector use both row(n) and col(m) to fill properly. -->
+// <!-- Debuged Errors :
+// Error 1 : passing a 2D array was not a good idea, use vector instead
+// Error 2 : Don't rely on single row value because n and m values can be different
+// Error 3 : while filing 2D vector use both row(n) and col(m) to fill properly. -->
 
 
 #include <bits/stdc++.h>
