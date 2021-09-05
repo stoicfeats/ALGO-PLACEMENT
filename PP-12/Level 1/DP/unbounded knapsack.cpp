@@ -1,40 +1,47 @@
-
 #include<bits/stdc++.h>
 using namespace std;
 
-int knapsack(int count,int arr[],int weight[],int sum){
-    int dp[count+1][sum+1];
-    for(int i=0;i<count+1;i++){
-        for(int j=0;j<sum+1;j++){
-            if(i==0||j==0){
-                dp[i][j] = 0;
-            }else {
-                if(weight[i-1]>j){
-                    dp[i][j] = dp[i-1][j];
-                }else{
-                    dp[i][j] = max(dp[i-1][j],dp[i-1][j-weight[i-1]]+arr[i-1]); 
-                }
+int knapsack(int n,int val[],int weight[],int sum){
+    int dp[sum+1] ={0};
+    // for(int x=0; x<=sum+1; x++){
+    //     dp[x] = 0;
+    // }
+    
+    // for(int x=0; x<=sum+1; x++){
+    //     cout<<dp[x]<<" ";
+    // }
+    dp[0] = 0;
+    for(int i=1; i<=sum; i++){
+        for(int j=0; j<n; j++){
+            if(weight[j]<=i){
+                dp[i] = max(dp[i],(dp[i-weight[j]]+val[j]));
             }
+
         }
     }
-    return dp[count][sum];
+    // for(int x=0; x<=sum; x++){
+    //     cout<<dp[x]<<" ";
+    // }
+    return dp[sum];
 };
 
 
 int main()
-{
-    int count1;
-    cin>>count1;
-    int arr1[count1];
-    for(int i=0;i<count1;i++){
-        cin>>arr1[i]; 
+{ 
+    int n;
+    cin>>n;
+    int val[n];
+
+    for(int i=0;i<n;i++){
+        cin>>val[i]; 
     }
 
-    int weight1[count1];
-    for(int i=0;i<count1;i++){
-        cin>>weight1[i];
+    int weight[n];
+    for(int i=0;i<n;i++){
+        cin>>weight[i];
     }
-    int sum1;cin>>sum1;
-    cout<<knapsack(count1,arr1,weight1,sum1);
+
+    int sum;cin>>sum;
+    cout<<knapsack(n,val,weight,sum);
     return 0;
 }
