@@ -1,5 +1,7 @@
 ### How to automate for loop 
 
+> one and only line you need to print an array is : for (auto i : nge) cout << i <<endl;
+
 using *auto* haha or range-for loop
 
 ```
