@@ -1,5 +1,6 @@
 // implementation -> files / folder interact
 
+const { O_DIRECTORY } = require("constants");
 let fs = require("fs");
 
 // reading the file after passing it path 
@@ -29,3 +30,23 @@ fs.appendFileSync("abc.txt","Test Append Function")
 
 fs.unlinkSync("abc.txt");
 console.log("Removed");
+
+
+// ******************DIRECTORY**************
+
+// create
+fs.mkdirSync("New Directory");
+
+// delete
+fs.rmdirSync("New Directory");
+
+// path check -> true or false
+let exist = fs.existsSync("fs1.js");
+console.log("This path exists ? :",exist);  
+
+// to check if it's a path or directory 
+let path = fs.lstatSync("dir1");
+console.log("stats : ", path);
+console.log("is file ? : ", path.isFile());
+console.log("is directory ? : ", path.isDirectory());
+
