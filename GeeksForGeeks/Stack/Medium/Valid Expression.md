@@ -3,7 +3,7 @@
 
 ### Solution Video : https://www.youtube.com/watch?v=uuE2pEjLiEI
 
-SOLUTION : (ACCEPTED)
+SOLUTION 1 : (ACCEPTED)
 
 ```
 bool valid(string str)
@@ -43,5 +43,47 @@ if(stack.empty()){
 }else{
     return "0";
 }
+}
+```
+
+SOLUTION 2 : (ACCEPTED) 
+>short and precise 
+
+```
+bool valid(string S)
+{
+    stack<char> st;
+    
+    for(auto x: S)
+    {
+        if(x == '(' or x == '{' or x == '[')
+        {
+            st.push(x);
+        }
+        else
+        {
+            if(!st.empty())
+            {
+                if(st.top() == '(' and x == ')')
+                {
+                    st.pop();
+                }
+                else if(st.top() == '{' and x == '}')
+                {
+                    st.pop();
+                }
+                else if(st.top() == '[' and x == ']')
+                {
+                    st.pop();
+                }
+            }
+            else
+            {
+                return 0;
+            }
+        }
+    }
+    
+    return st.empty() ? 1 : 0;
 }
 ```
