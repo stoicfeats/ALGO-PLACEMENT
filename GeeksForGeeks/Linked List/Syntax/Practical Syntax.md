@@ -28,3 +28,19 @@ int getCount(struct Node* head)
     return count;     
     }
 ```
+
+### Linked List Length Even or Odd :
+
+return 0 for even 1 for odd
+
+```
+int isLengthEvenOrOdd(struct Node* head)
+{
+     int count=0;
+     while(head!=NULL){
+         count++;
+         head = head->next;
+     }
+     return count%2==0 ? 0 : 1 ;
+}
+```
