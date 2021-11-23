@@ -64,11 +64,25 @@ int height(Node *node)
     return node == nullptr ? -1 : max(height(node->left), height(node->right)) + 1; 
 }
 
- int isbalance(Node *node)
-  {
-      
-  }
+void solve(Node* root, Node* &prev, int &f)
+    {
+        if(!root) return;
+        
+        solve(root->left,prev,f);
+        if(prev != NULL and root->data <= prev->data){
+            f = 0;
+            return;
+        }
+        prev = root;
+        solve(root->right,prev,f);
+    }
 
+ bool Bst(Node *node){
+    int f = 1;
+    Node* prev = NULL;
+    solve(node,prev,f);
+    return f;
+ }
 
 int main(){
     int n;
@@ -87,9 +101,9 @@ int main(){
     
     
     Node *root = constructTree(arr);
-    
-    int r = isbalance(root);
-    if(isbal == 1)
+
+    bool ans = Bst(root);
+    if(ans == 1)
     cout << "true";
     else 
     cout<<"false";
