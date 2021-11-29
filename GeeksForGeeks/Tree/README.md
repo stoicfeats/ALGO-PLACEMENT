@@ -27,3 +27,5 @@ main(){
 
     root->left->right=new Node(4);
 }
+
+## Binary Search Tree Syntax to be added soon
