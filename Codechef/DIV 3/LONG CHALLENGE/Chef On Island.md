@@ -15,7 +15,7 @@ int main()
             cin >> x >> y >> x1 >> y2 >> z;
             float r1 = x/x1;
             float r2 = y/y2;
-            if(min(r1,r2) < z)cout<<"NO"<<endl;
+            if(min(r1,r2) < z)cout<<"NO"<<endl;a 
             else cout<<"YES"<<endl;
     }
     return 0;
