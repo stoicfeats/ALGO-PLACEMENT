@@ -87,6 +87,7 @@ void solve(Node* root, Node* &prev, int &f)
 int main(){
     int n;
     cin>>n;
+    // vecotr adding on NY
     
     vector<int> arr(n,0);
     for(int i = 0; i < n; i++) {
