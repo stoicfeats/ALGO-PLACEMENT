@@ -69,7 +69,7 @@ int size(Node* node)
   return leftsize+rightsize+1;
 }
 
-int height(Node* node)
+int height(Node* node) // in term of edges 
 {
   if(!node) return -1;
   int lh = height(node->left);
@@ -79,7 +79,7 @@ int height(Node* node)
 
 int maximum(Node* node)
 {
-  return max_sum;
+  return max_sum; // max sum was kept and calc within the sum function
 }
 
 int sum(Node* root)
