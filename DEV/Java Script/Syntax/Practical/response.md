@@ -31,3 +31,5 @@ Now for sign, class is same but ID is different, so we will use Select By Elemen
 ```
 document.getElementById("tab2").click()
 ```
+
+4. Syntax 
