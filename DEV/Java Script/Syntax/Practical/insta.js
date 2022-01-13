@@ -7,13 +7,10 @@ for (var i = 0; i < items.length; i++) {
         items[i].click();
     }
 }
-for(var i=30;i<items.length;i++){
+
+var items = document.querySelectorAll(".Pkbci")
+for(var i=3;i<items.length;i++){
 items[i].querySelector('button').click()
 }
 
-for(var i=0;i<items.length;i++){
-    if(items[i].querySelector('button').innerText()=="Follow"){
-    items[i].querySelector('button').click()
-    }
-    }
 

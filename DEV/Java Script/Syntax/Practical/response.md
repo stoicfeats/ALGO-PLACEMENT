@@ -32,4 +32,10 @@ Now for sign, class is same but ID is different, so we will use Select By Elemen
 document.getElementById("tab2").click()
 ```
 
-4. Syntax 
+4. Syntax for a blue button 
+
+```
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+```
