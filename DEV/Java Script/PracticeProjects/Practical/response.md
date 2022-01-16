@@ -39,3 +39,13 @@ document.getElementById("tab2").click()
               <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
             </p>
 ```
+5. How to color background of whole page : 
+```
+document.body.style.backgroundColor
+```
+
+6. How to generate random hex number : 
+```
+const color = Math.random().toString(16).substring(2,8);
+``` 
+Note : toString() have base 10 normally but we changed it too 16 for hexa decimal;
