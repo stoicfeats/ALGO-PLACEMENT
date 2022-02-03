@@ -27,7 +27,7 @@ class complexNumber{
             return imaginary;
         }
 
-};
+};  
 
 complexNumber add(complexNumber x, complexNumber y){
     int r;
