@@ -1,12 +1,12 @@
 import React from 'react'
-import Restaurant from './components/Basics/restaurant'
+import Cheese from './components/todoreact/todo'
 
 const App = () => {
   return  (
     <>
-    <Restaurant/>
+    <Cheese/>
     </>
   )
 }
 
-export default App
+export default App;
