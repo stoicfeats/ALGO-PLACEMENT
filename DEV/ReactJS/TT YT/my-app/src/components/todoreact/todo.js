@@ -18,6 +18,11 @@ const Todo = () => {
           />
           <i className="fa fa-plus     add-btn"></i>
           </div>
+          <div className="showItems">
+            <button className="btn effect04" data-sm-link-text="Remove All">
+              <span>CHECK LIST</span>
+            </button>
+          </div>
       </div>
     </div>
     </>
